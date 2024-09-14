@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="繁体怎么写,简体怎么写,繁体简体转换,繁简,化繁为简,简体字,繁体字,简体字转繁体字,中文转繁体,繁体转中文,汉字">
+<meta name="keywords" content="繁体怎么写,简体怎么写,繁体简体转换,繁简,化繁为简,简体字,繁体字,简体字转繁体字,中文转繁体,繁体转中文,汉字" />
+<title>汉字简繁转换-繁体怎么写-简体怎么写-汉字中文繁体简体转换</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://www.zhuanpinyin.com/mystyles.css">
+<script src="https://www.zhuanpinyin.com/js/fanti_corvert.js"></script> 
+<script>
+<!--
+function zhuanhuan($s)
+{
+    var ch=chk('ch');
+	var content=document.getElementById('content').value;
+	if(ch=='fanti')
+    {
+        var contentout=traditionalized(content);
+		//document.getElementById('source').value='zh-CN';
+        //document.getElementById('to').value='zh-TW';
+    }
+    else
+    {
+        //document.getElementById('source').value='zh-TW';
+        //document.getElementById('to').value='zh-CN';
+		var contentout=simplized(content);
+    }
+    //translate();
+	document.getElementById('contentout').value=contentout;
+}
+function qingkong()
+{
+	document.getElementById('content').value='';
+	document.getElementById('contentout').value='';
+
+}
+function   chk(name){   
+  var   obj   =   document.getElementsByName(name);   
+  for   (i=0;i<obj.length;i++){   
+  if   (obj[i].checked){   
+  return obj[i].value;  
+  return;   
+  }   
+  }   
+  }  
+//-->
+    
+function copy2() {
+  /* Get the text field */
+  var copyText = document.getElementById("contentout");
+
+  /* Select the text field */
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("复制成功,请粘贴!");
+}
+    
+</script> 
+<script data-ad-client="ca-pub-7441844504154736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<section class="hero is-fullheight-with-navbar">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand"> <a class="navbar-item"> <img src="http://qqjsz.cn/p/6090a453.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroB"> <span></span> <span></span> <span></span> </span> </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end"> <a class="navbar-item is-active" href="http://www.rippleicethorn.cn/Etest-pinyin.html"> 汉字转拼音 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest-shuzi.html"> 数字大小写转换 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest-jianfan.html"> 简繁转换 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest.html"> 字数统计 </a> </div>
+        </div>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <div class="container pl-5 pb-5">
+            <h1 class="title is-size-4"> 汉字简繁转换 </h1>
+            <h2 class="subtitle is-size-6"> http://www.rippleicethorn.cn/Etest-jianfan.html </h2>
+          </div>
+          <div class="control mb-5">
+            <textarea class="textarea is-focused" autofocus id="content" placeholder="输入(或粘贴)要转换的内容..." onload="this.value=''" type="text"></textarea>
+          </div>
+          <div class="notification">
+            <button class="delete"></button>
+            在上面文字框内输入任意“繁体”或“简体”字；点击“转换”按钮，下方得到转换的结果。 </div>
+          <div class="control is-pulled-left">
+            <label class="radio" for="all">
+              <input type="radio" name="ch" id="ch" value="fanti">
+              转换成繁体 </label>
+            <label class="radio" for="ch">
+              <input type="radio" name="ch" id="ch" value="jianti" checked>
+              转换成简体 </label>
+          </div>
+          <div class="buttons is-right">
+            <button class="button has-background-warning" href="javascript:void(0)" onclick="zhuanhuan('fanti')">立即转换</button>
+            <button class="button" href="javascript:void(0)" onclick="qingkong()" >清空</button>
+          </div>
+          <div class="control is-loading mb-5">
+            <input type="hidden" value="" id="source">
+            <input type="hidden" value="" id="to">
+            <textarea class="textarea is-primary" name="转换后内容" id="contentout" type="text" onload="this.value=''" placeholder="转换结果..."></textarea>
+          </div>
+          <div class="buttons is-right">
+            <button class="button has-background-warning" onclick="copy2()">复制到剪贴板</button>
+          </div>
+        </div>
+        <div class="column">ad</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot px-5">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a href="http://www.rippleicethorn.cn/Etest.html" aria-current="page">网站首页</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">word字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">字数统计工具</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线查字数</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-pinyin.html">汉字转拼音</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-shuzi.html">数字大小写转换</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-jianfan.html">汉字简繁转换</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+    <div class="container has-text-grey">
+      <address>
+      Any questions ? <a href="mailto:1316540636@qq.com">1316540636@qq.com</a><br>
+      <small>© 2021 . All Rights Reserved . Made with <a href="http://www.7sheji.com/">Ripple Icethorn</a> . <a href="https://beian.miit.gov.cn/">鲁ICP备11号-2</a></small>
+      </address>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+function resetForm() {
+    document.getElementById("content").value = "";
+}
+</script>
+<noscript>
+Sorry, your browser does not support JavaScript!
+</noscript>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在线字数统计工具-统计字符字节汉字数字标点符号-计算word文章字数</title>
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="keywords" content="字数统计,字符统计,字节统计,字数计算,统计字数,统计字节数,统计字符数,统计word字数,在线字数统计,在线查字数,计算字数,字数统计工具,Calculate,Count,number of words">
+<meta name="description" content="字数统计,字符统计,字节统计,字数计算,统计字数,统计字节数,统计字符数,统计word字数,在线字数统计,在线查字数,计算字数,字数统计工具,支持手机移动端查询多少字数,英文:Calculate the number of words,Count the number of words.">
+<link rel="stylesheet" href="https://www.eteste.com/mystyles.css">
+<script data-ad-client="ca-pub-7441844504154736" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style type="text/css" abt="234"></style><style>.crx_bdwk_down_wrap {
+    top: 70%;
+    left: 0;
+    position: fixed;
+    z-index: 99999999;
+    color: #fff;
+    user-select: none;
+}
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_loading {
+        background-color: #666;
+        cursor: wait;
+        width: 126px;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_loading p {
+            font-size: 14px;
+        }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_loading small {
+            font-size: 10px;
+        }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_btn {
+        width: 126px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+        background-color: #dd5a57;
+        position: relative;
+    }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: #666;
+        font-size: 12px;
+    }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types div {
+            position: relative;
+        }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types div:after {
+                content: ' ';
+                height: 12px;
+                width: 1px;
+                background-color: #eee;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                transform: scaleX(0.5);
+            }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types div:last-child:after {
+                    display: none;
+                }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types_check {
+            flex: 1;
+            color: #dd5a57;
+            padding: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+    .crx_bdwk_down_wrap .crx_bdwk_down_types_uncheck {
+            flex: 1;
+            padding: 8px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: lighter;
+        }
+</style><script>//remove baidu search ad
+var _countAA = 0
+function doBBBd(){}
+doBBBd()
+document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
+document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
+
+</script></head>
+<body>
+<section class="hero">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand"> <a class="navbar-item"> <img src="http://qqjsz.cn/p/6090a453.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span> </span> </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end"> <a class="navbar-item is-active" href="http://www.rippleicethorn.cn/Etest.html"> 首页 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest-more.html"> 了解更多 </a> <span class="navbar-item"> <a class="button is-primary is-inverted" download="字数统计工具EtestE.com.html" href="http://www.rippleicethorn.cn/Etest.html" target="_blank" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)"> 离线下载使用 </a> </span> </div>
+        </div>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-hidden-mobile">
+          <aside class="menu">
+            <p class="menu-label"> 其他字数工具 </p>
+            <ul class="menu-list">
+              <li> <a class="is-active is-size-6" href="http://www.rippleicethorn.cn/Etest.html">字数统计</a>
+                <ul class="is-size-7">
+                  <li><a href="http://www.rippleicethorn.cn/Etest-pinyin.html">汉字转拼音</a></li>
+                  <li><a href="http://www.rippleicethorn.cn/Etest-shuzi.html">数字大小写转换</a></li>
+                  <li><a href="http://www.rippleicethorn.cn/Etest-jianfan.html">汉字简繁转换</a></li>
+                </ul>
+              </li>
+              <li><a href="#display">字数计算器</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column is-three-fifths-desktop is-narrow">
+          <h1 class="title is-info is-4">在线字数统计</h1>
+          <h2 class="subtitle is-info is-6">http://www.rippleicethorn.cn/Etest.html</h2>
+          <div class="field is-horizontal is-info">
+            <div class="field-body is-info">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea is-focused" placeholder="输入(或粘贴)统计字数的内容:" rows="12" id="content" autofocus=""></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons is-right">
+            <button class="button is-loading is-text is-small">Loading</button>
+            <button class="button is-primary  is-rounded is-small" type="reset" value="reset" name="reset" onclick="resetForm()">全部清空!</button>
+          </div>
+          <div class="field is-grouped is-grouped-multiline" id="copyArea"> <span class="tag is-medium"> 共计： </span>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag is-dark is-medium" id="zishu">0</span> <span class="tag is-primary is-medium">个字数</span> </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag is-dark is-medium" id="zifu">0</span> <span class="tag is-primary is-medium">个字符</span> </div>
+            </div>
+          </div>
+          <div class="field is-grouped is-grouped-multiline"> <span class="tag"> 包含： </span>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag" id="hanzi">0</span> <span class="tag is-danger is-light">个汉字</span> </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag" id="biaodian">0</span> <span class="tag is-info is-light">个标点(全角)</span> </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag" id="zimu">0</span> <span class="tag is-success is-light">个字母</span> </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons"> <span class="tag" id="shuzi">0</span> <span class="tag is-warning is-light">个数字</span> </div>
+            </div>
+          </div>
+          <div class="notification is-white-bis is-light">
+            <button class="delete"></button>
+            <a href="http://www.rippleicethorn.cn/Etest-more.html" target="_blank"><strong>字数</strong>和<strong>字符</strong>区别，以及其他帮助点击! </a></div>
+        </div>
+        <div class="column ">
+          <p class="menu-label"> 不用太单调 </p>
+          <!-- eteste --> 
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7441844504154736" data-ad-slot="9598765760" data-ad-format="auto" data-full-width-responsive="true"></ins> 
+          <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title is-5 is-spaced">字数统计工具是做什么用的？</p>
+            <p class="is-6">在线字数查询工具可方便的统计出字符个数。
+              并且能够分别统计出中文汉字，英文字符，标点符号，字母，数字的个数。</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title is-5 is-spaced">字数统计工具如何使用？</p>
+            <p class="is-6">1、在输入框中输入或粘贴要统计字数的内容。</p>
+            <p class="is-6">2、随即字符输入框下方显示详细的字数统计结果。</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title is-5">字数计算器</p>
+            <form name="calculator">
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <td><input id="display" type="text" name="display" readonly="" class="input is-rounded has-text-right" placeholder="0"></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="buttons are-small">
+                        <button class="button is-rounded" type="button" value="7" onclick="calculator.display.value += '7'">7</button>
+                        <button class="button is-rounded" type="button" value="8" onclick="calculator.display.value += '8'">8</button>
+                        <button class="button is-rounded" type="button" value="9" onclick="calculator.display.value += '9'">9</button>
+                        <button class="button is-rounded" type="button" value="+" onclick="calculator.display.value += '+'">+</button>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="buttons are-small">
+                        <button class="button is-rounded" type="button" value="4" onclick="calculator.display.value += '4'">4</button>
+                        <button class="button is-rounded" type="button" value="5" onclick="calculator.display.value += '5'">5</button>
+                        <button class="button is-rounded" type="button" value="6" onclick="calculator.display.value += '6'">6</button>
+                        <button class="button is-rounded" type="button" value="-" onclick="calculator.display.value += '-'">-</button>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="buttons are-small">
+                        <button class="button is-rounded" type="button" value="1" onclick="calculator.display.value += '1'">1</button>
+                        <button class="button is-rounded" type="button" value="2" onclick="calculator.display.value += '2'">2</button>
+                        <button class="button is-rounded" type="button" value="3" onclick="calculator.display.value += '3'">3</button>
+                        <button class="button is-rounded" type="button" value="*" onclick="calculator.display.value += '*'">*</button>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="buttons are-small">
+                        <button class="button is-rounded" type="button" value="C" onclick="calculator.display.value = ''">C</button>
+                        <button class="button is-rounded" type="button" value="0" onclick="calculator.display.value += '0'">0</button>
+                        <button class="button is-rounded" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</button>
+                        <button class="button is-rounded" type="button" value="/" onclick="calculator.display.value += '/'">/</button>
+                      </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot px-5">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a href="http://www.rippleicethorn.cn/Etest.html" aria-current="page">网站首页</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">word字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">字数统计工具</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线查字数</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-pinyin.html">汉字转拼音</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-shuzi.html">数字大小写转换</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-jianfan.html">汉字简繁转换</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+    <div class="container has-text-grey">
+      <address>
+      Any questions ? <a href="mailto:1316540636@qq.com">1316540636@qq.com</a><br>
+      <small>© 2021 . All Rights Reserved . Made with <a href="http://www.7sheji.com/">Ripple Icethorn</a> . <a href="https://beian.miit.gov.cn/">鲁ICP备11号-2</a></small>
+      </address>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+    var EventUtil = function() {};
+    EventUtil.addEventHandler = function(obj, EventType, Handler) {
+        if (obj.addEventListener) {
+            obj.addEventListener(EventType, Handler, false);
+        }
+        else if (obj.attachEvent) {
+            obj.attachEvent('on' + EventType, Handler);
+        } else {
+            obj['on' + EventType] = Handler;
+        }
+    }
+    if ($("content")) {
+        EventUtil.addEventHandler($('content'), 'propertychange', CountChineseCharacters);
+        EventUtil.addEventHandler($('content'), 'input', CountChineseCharacters);
+    }
+    function showit(Word) {
+        alert(Word);
+    }
+    function CountChineseCharacters() {
+        Words = $('content').value;
+        var W = new Object();
+        var Result = new Array();
+        var iNumwords = 0;
+        var sNumwords = 0;
+        var sTotal = 0;
+        var iTotal = 0;
+        var eTotal = 0;
+        var otherTotal = 0;
+        var bTotal = 0;
+        var inum = 0;
+        for (i = 0; i < Words.length; i++) {
+            var c = Words.charAt(i);
+            if (c.match(/[\u4e00-\u9fa5]/)) {
+                if (isNaN(W[c])) {
+                    iNumwords++;
+                    W[c] = 1;
+                }
+                iTotal++;
+            }
+        }
+        for (i = 0; i < Words.length; i++) {
+            var c = Words.charAt(i);
+            if (c.match(/[^\x00-\xff]/)) {
+                if (isNaN(W[c])) {
+                    sNumwords++;
+                }
+                sTotal++;
+            } else {
+                eTotal++;
+            }
+            if (c.match(/[0-9]/)) {
+                inum++;
+            }
+        }
+        $('hanzi').innerText = iTotal;
+        $('zishu').innerText = inum + iTotal;
+        $('biaodian').innerText = sTotal - iTotal;
+        $('zimu').innerText = eTotal - inum;
+        $('shuzi').innerText = inum;
+        document.getElementById("zifu").innerHTML = iTotal * 2 + (sTotal - iTotal) * 2 + eTotal;
+    }
+</script> 
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+function resetForm() {
+    document.getElementById("content").value = "";
+}
+</script>
+<noscript>
+Sorry, your browser does not support JavaScript!
+</noscript>
+
+</body></html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="转拼音,查拼音,汉字转拼音,看拼音,读拼音,汉字转拼音工具,怎么读,怎么念,发音,多音字,多音字查询,中文转换成拼音,汉字转成拼音,在线汉字转换拼音工具,拼音转换">
+<meta name="keywords" content="转拼音,查拼音,汉字转拼音,看拼音,读拼音,汉字转拼音工具,怎么读,怎么念,发音,多音字,多音字查询,中文转换成拼音,汉字转成拼音,在线汉字转换拼音工具,拼音转换">
+<title>汉字转拼音-多音字查询-汉字中文转拼音</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://www.zhuanpinyin.com/mystyles.css">
+<script src="https://www.zhuanpinyin.com/js/sd.js"></script> 
+<script>
+    <!--
+function pinyin(cc){
+	var str='';
+	var s;
+	for(var i=0;i<cc.length;i++){
+	//alert(cc.charAt(i)+" = "+cc.charCodeAt(i));
+		if(sd.indexOf(cc.charAt(i))!=-1&&cc.charCodeAt(i)>200){
+			s=1;
+			while(sd.charAt(sd.indexOf(cc.charAt(i))+s)!=","){
+				str+=sd.charAt(sd.indexOf(cc.charAt(i))+s);
+				s++;
+			}
+
+			str+=" ";
+		}
+		else{
+			str+=cc.charAt(i);
+		}
+	}
+	return str;
+}
+
+function resetAll(){
+	document.getElementById('source').value="";
+	document.getElementById('to').value="";
+}
+
+function zhuanPinyin()
+{
+	var source=document.getElementById('source').value;
+	var toPinyin=pinyin(source);
+	document.getElementById('to').value=toPinyin;
+}
+//-->
+    
+    
+    
+    function copy2() {
+  /* Get the text field */
+  var copyText = document.getElementById("to");
+
+  /* Select the text field */
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("复制成功,请粘贴!");
+}
+    
+</script> 
+<script data-ad-client="ca-pub-7441844504154736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<section class="hero is-fullheight-with-navbar">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand"> <a class="navbar-item"> <img src="http://qqjsz.cn/p/6090a453.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroB"> <span></span> <span></span> <span></span> </span> </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end"> <a class="navbar-item is-active" href="http://www.rippleicethorn.cn/Etest-pinyin.html"> 汉字转拼音 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest-shuzi.html"> 数字大小写转换 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest-jianfan.html"> 简繁转换 </a> <a class="navbar-item" href="http://www.rippleicethorn.cn/Etest.html"> 字数统计 </a> </div>
+        </div>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <div class="container pl-5 pb-5">
+            <h1 class="title is-size-4"> 汉字转拼音 </h1>
+            <h2 class="subtitle is-size-6"> http://www.rippleicethorn.cn/Etest-pinyin.html </h2>
+          </div>
+          <div class="control mb-5">
+            <textarea class="textarea is-focused" placeholder="输入(或粘贴)要转换的内容..." autofocus id="source" onload="this.value=''" type="text"></textarea>
+          </div>
+          <div class="notification">
+            <button class="delete"></button>
+            在上面文字框内输入要转换的中文汉字；<br>
+            点击“转换”按钮，得到相应的汉字拼音。<br>
+            ()括号内已列出该字的多音字，由于机器转换谨慎参考。 </div>
+          <div class="buttons is-right">
+            <button class="button has-background-warning ">
+            <a href="javascript:void(0)" onclick="zhuanPinyin()">立即转换</a>
+            </button>
+            <button class="button" >
+            <a href="javascript:void(0)" onclick="resetAll()">清空</a>
+            </button>
+          </div>
+          <div class="control is-loading mb-5">
+            <textarea id="to" class="textarea is-primary" placeholder="转换结果..." type="text" onload="this.value=''"></textarea>
+          </div>
+          <div class="buttons is-right">
+            <button class="button has-background-warning" onclick="copy2()">复制到剪贴板</button>
+          </div>
+        </div>
+        <div class="column">ad</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot px-5">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a href="http://www.rippleicethorn.cn/Etest-pinyin.html" aria-current="page">网站首页</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">word字数统计</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">字数统计工具</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest.html">在线查字数</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-pinyin.html">汉字转拼音</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-shuzi.html">数字大小写转换</a></li>
+          <li><a href="http://www.rippleicethorn.cn/Etest-jianfan.html">汉字简繁转换</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="navbar-divider">
+    <div class="container has-text-grey">
+      <address>
+      Any questions ? <a href="mailto:1316540636@qq.com">1316540636@qq.com</a><br>
+      <small>© 2021 . All Rights Reserved . Made with <a href="http://www.7sheji.com/">Ripple Icethorn</a> . <a href="https://beian.miit.gov.cn/">鲁ICP备11号-2</a></small>
+      </address>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+function resetForm() {
+    document.getElementById("content").value = "";
+}
+</script>
+<noscript>
+Sorry, your browser does not support JavaScript!
+</noscript>
+</body>
+</html>
