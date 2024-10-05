@@ -12,3 +12,7 @@
 ||m057.pro^
 ||m276.pro^
 ||p1.meituan.net^
+||yyyp.oss-cn-beijing.aliyuncs.com^
+||grzyfey.com^
+||建筑机械.cc^
+||通胜科技.com^
