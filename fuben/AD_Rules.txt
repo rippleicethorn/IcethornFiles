@@ -1,3 +1,14 @@
+!
+! Title: AD_Rules
+! Description: List for blocking ads in the Chinese region. Aims at privacy protection.
+! Version: 1.0
+! Homepage: https://rippleicethorn.cn/fuben/AD_Rules.txt
+!
+! Source name: AD_Rules
+! Source: https://rippleicethorn.cn/fuben/AD_Rules.txt
+!
+!note: If you are using "AdGuard Home", please load https://rippleicethorn.cn/fuben/AD_Rules.txt
+!
 ||anythinktech.com^
 ||ads.heytapmobi.com^
 ||activity.dcad01.com^
@@ -8,9 +19,16 @@
 ||52gao1403.cc^
 ||cmrptn.xyz^
 ||sepjbj.xyz^
-||m155.pro^
-||m057.pro^
-||m276.pro^
+||m0*.pro^
+||m1*.pro^
+||m2*.pro^
+||m3*.pro^
+||m4*.pro^
+||m5*.pro^
+||m6*.pro^
+||m7*.pro^
+||m8*.pro^
+||m9*.pro^
 ||p1.meituan.net^
 ||yyyp.oss-cn-beijing.aliyuncs.com^
 ||grzyfey.com^
