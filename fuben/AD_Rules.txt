@@ -7,7 +7,7 @@
 ! Source name: AD_Rules
 ! Source: https://rippleicethorn.cn/fuben/AD_Rules.txt
 !
-!note: If you are using "AdGuard Home", please load https://rippleicethorn.cn/fuben/AD_Rules.txt
+! Note: If you are using "AdGuard Home", please load https://rippleicethorn.cn/fuben/AD_Rules.txt
 !
 ||anythinktech.com^
 ||ads.heytapmobi.com^
